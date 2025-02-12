@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termometer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="termometer">Termometer - °C og °F
+        <br>
+        <input type="number" class="graderInput" id="graderInput" value="0" min="-273" max="273" /> °C
+        <div class="graderDisplay">
+            <div class="grader">Celcius
+                <div class="graderCelcius" id="graderCelcius"></div>
+            </div>
+            <div class="grader">Fahrenheit
+                <div class="graderFahrenheit" id="graderFahrenheit"></div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="box1">
+                <div class="range-slider">
+                    <div id="slider_thumb" class="range-slider_thumb"></div>
+                    <div class="range-slider_line">
+                        <div id="slider_line" class="range-slider_line-fill"></div>
+                    </div>
+                    <input type="range" class="range-slider_input" id="slider_input" value="273" min="0" max="546" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
