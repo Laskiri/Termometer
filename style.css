@@ -1,14 +1,10 @@
 body {
     background-color: #f4f4f4;
     font-family: "Roboto", sans-serif;
-    overflow: hidden;
 }
 
 .termometer {
     width: 500px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
     font-size: 30px;
     transform: scale(0.8);
 }
@@ -141,6 +137,18 @@ body {
     border-radius: 50px;
     width: 0;
     background-color: transparent;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#expression {
+    width: 256px;
+    height: 256px;
 }
 
 @media screen and (max-width: 450px) {
